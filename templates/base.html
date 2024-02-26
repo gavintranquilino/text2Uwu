@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>only uwu</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+    <body>
+        <div class="ui container">
+            <h1 class="ui header" style="margin-top: 10px">
+                guhbean is so submissive and breedabe rn
+            </h1>
+            <p>everything will be uwu-ized</p>
+            <form method="post">
+                <div class="ui input focus">
+                    <input
+                        class="ui input focus"
+                        type="text"
+                        name="content"
+                        placeholder="text-to-uwu"
+                    />
+                </div>
+                <br />
+                <button
+                    class="ui green button"
+                    style="margin-top: 10px"
+                    type="submit"
+                >
+                    send
+                </button>
+            </form>
+
+            <ol>
+                {% if result is not none %} {% for i in results %}
+                <li>{{ i }}</li>
+                {% endfor %} {% endif %}
+            </ol>
+        </div>
+    </body>
+</html>
